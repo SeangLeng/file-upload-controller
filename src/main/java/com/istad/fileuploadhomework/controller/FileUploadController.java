@@ -19,7 +19,7 @@ public class FileUploadController {
 
     @Value("${project.image}")
     private String path;
-    @PostMapping("/upload")
+    @PostMapping("/upload") 
     public ResponseEntity<FileRespone> fileUpload(@RequestParam("image") MultipartFile image){
         String filename = null;
         try {
